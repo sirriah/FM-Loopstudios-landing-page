@@ -1,0 +1,48 @@
+.header{
+
+    nav {
+        padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+    }
+
+    &__logo{
+        img {
+            width: 9rem;
+            height: auto;
+        }
+    }
+
+    &__links {
+        //border: 1px solid red;
+        a {
+            font-size: $font-med;
+            color: white;
+            position: relative;
+            
+            &:not(:last-child){
+                margin-right: 32px;
+            }
+
+            &::before{
+                content: "";
+                position: absolute;
+                display: block;
+                height: 2px;
+                left: 0.5rem;
+                right: 0.5rem;
+                bottom: -0.5rem;
+                background-color: white;
+                opacity: 0;
+                transition: opacity 200ms ease-in-out;
+            }
+
+            &:hover {
+                &::before{
+                    opacity: 1;
+                }
+                
+                //color: red;
+            }
+        }
+    }
+}
+

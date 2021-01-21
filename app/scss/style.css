@@ -1,0 +1,128 @@
+/* 
+* ||   Loopstudios Landing Page Main
+* ||   Frontendmentor.io challenge
+*/
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Alata", sans-serif;
+  line-height: 1.3;
+  font-size: 0.9375rem;
+  background-color: pink;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sr-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: none;
+  color: transparent;
+}
+
+button, .button {
+  text-transform: uppercase;
+  letter-spacing: 0.3125rem;
+  color: black;
+  border: 1px solid black;
+  padding: 0.5rem 2.2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+button:hover, .button:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.header nav {
+  padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+}
+
+.header__logo img {
+  width: 9rem;
+  height: auto;
+}
+
+.header__links a {
+  font-size: 0.9375rem;
+  color: white;
+  position: relative;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 32px;
+}
+
+.header__links a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: -0.5rem;
+  background-color: white;
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.header__links a:hover::before {
+  opacity: 1;
+}
+
+/*======  General  =============*/
+/*# sourceMappingURL=style.css.map */
