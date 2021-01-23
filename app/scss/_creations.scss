@@ -1,0 +1,151 @@
+.creations{
+
+    &__header{
+        @include breakpoint-up(large) {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        h2 {
+            text-align: center;
+            @include breakpoint-up(large) {
+                text-align: left;
+                display: inline-block;
+                position: relative;
+                margin-bottom: 0;
+            }
+        }
+
+               
+
+    }
+
+    
+
+    .button {
+        margin: 1.875rem auto;
+
+        @include breakpoint-up(large){
+            margin: 0;
+        }
+    }
+
+    
+
+
+    &__grid{
+        margin: 0 1.5rem 0 1.5rem;
+        @include breakpoint-up(large) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0;
+        }
+    }
+
+    &__item{
+        height: 7.5rem;
+        min-width: 100%;
+        background-image: linear-gradient( rgba(0, 0, 0, 0.6), transparent);
+        background-size: cover;
+        display: inline-block;
+        position: relative;
+        
+        &:not(:last-child){
+            margin-bottom: 1.5rem;
+            
+        }
+
+        @include breakpoint-up(large){
+            flex: 1;
+            min-width: 23%;
+            max-width: 16rem;
+            height: 28.125rem;
+
+        }
+
+         h3 {
+            color: white;
+            position: absolute;
+            bottom: 1.5rem;
+            left: 1.5rem;
+            margin: 0;
+            max-height: 7.6875rem;
+
+            &::after{
+                display: block;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background-color: pink;
+                opacity: 0.5;
+            }
+
+            @include breakpoint-up(large) {
+                font-size: 2rem;
+                line-height: 2rem;
+                padding-right: 1.5rem;
+            }
+        
+        }
+    }
+.deep-earth{
+    @include creation-background-mobile("./../../images/mobile/image-deep-earth.jpg");
+    @include breakpoint-up(large){
+        @include creation-background-desktop("./../../images/desktop/image-deep-earth.jpg"); 
+        
+    }
+
+}
+
+.night-arcade{
+    @include creation-background-mobile("./../../images/mobile/image-night-arcade.jpg");
+    @include breakpoint-up(large){
+        @include creation-background-desktop("./../../images/desktop/image-night-arcade.jpg"); 
+    }
+}
+
+.soccer-team{
+    @include creation-background-mobile("./../../images/mobile/image-soccer-team.jpg");
+    @include breakpoint-up(large){
+        @include creation-background-desktop("./../../images/desktop/image-soccer-team.jpg"); 
+    }
+}
+
+.the-grid{
+    @include creation-background-mobile("./../../images/mobile/image-grid.jpg");
+    @include breakpoint-up(large){
+        @include creation-background-desktop("./../../images/desktop/image-grid.jpg"); 
+    }
+}
+
+.from-up-above{
+    @include creation-background-mobile("./../../images/mobile/image-from-above.jpg");
+    @include breakpoint-up(large){
+        @include creation-background-desktop("./../../images/desktop/image-from-above.jpg"); 
+    }
+}
+
+.pocket-borealis{
+    @include creation-background-mobile("./../../images/mobile/image-pocket-borealis.jpg");
+    @include breakpoint-up(large){
+        @include creation-background-desktop("./../../images/desktop/image-pocket-borealis.jpg"); 
+    }
+}
+
+.the-curiosity{
+    @include creation-background-mobile("./../../images/mobile/image-curiosity.jpg");
+    @include breakpoint-up(large){
+        @include creation-background-desktop("./../../images/desktop/image-curiosity.jpg"); 
+    }
+}
+
+.make-it-fisheye{
+    @include creation-background-mobile("./../../images/mobile/image-fisheye.jpg");
+    @include breakpoint-up(large){
+        @include creation-background-desktop("./../../images/desktop/image-fisheye.jpg"); 
+    }
+}
+}
+

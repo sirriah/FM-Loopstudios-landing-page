@@ -1,0 +1,31 @@
+.introduction{
+    text-align: center;
+
+    @include breakpoint-up(large){
+        text-align: left;
+        position: relative;
+        min-height: 31.25rem;
+    }
+
+    &__image{
+        padding-bottom: 2.5rem;
+
+        @include breakpoint-up(large){
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__text {
+        @include breakpoint-up(large){
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            max-width: 33.8125rem;
+            background-color: white;
+            padding-top: 6rem;
+            padding-left: 6rem;
+        }
+    }
+}

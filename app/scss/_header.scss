@@ -58,6 +58,9 @@
     img {
       width: 9rem;
       height: auto;
+      @include breakpoint-up(large) {
+        width: 12rem;
+      }
     }
   }
 
@@ -78,7 +81,7 @@
   }
 
   &__links {
-    //border: 1px solid red;
+    
     a {
       font-size: $font-med;
       color: white;
@@ -106,7 +109,7 @@
           opacity: 1;
         }
 
-        //color: red;
+      
       }
     }
   }

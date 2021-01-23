@@ -17,11 +17,37 @@ body{
 }
 
 h1{
+    font-size: 2.5rem;
+}
+
+h2{
+  font-size: 2rem;;  
+}
+
+h3{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
     font-family: $fontHeadline;
+    text-transform: uppercase;
+    font-weight: 300;
 }
 
 a, a:visited {
     text-decoration: none;
+}
+
+p {
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  opacity: 0.5;  
+}
+
+img{
+    max-width: 100%;
 }
 
 .flex{
@@ -39,6 +65,36 @@ a, a:visited {
         align-items: center;
     }
 }
+
+.container {
+    margin: 0 auto;
+    max-width: 69.625rem;
+
+    &--pall{
+    padding-top: 3rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    }
+
+    &--py{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    &--px{
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    &--pt{
+        padding-top: 3rem;
+    }
+    &--pb{
+        padding-bottom: 3rem;
+    }
+}
+
 
 .sr-text{
     position: absolute;

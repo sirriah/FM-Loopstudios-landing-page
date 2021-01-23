@@ -20,3 +20,33 @@ $breakpoints-down:  ("small": "39.9375em", "medium": "63.9375em", "large": "87.4
         @content;
     }
 }
+
+@mixin creation-background-mobile($imageUrl){
+        background-image: linear-gradient( to right, rgba(0, 0, 0, 0.6), transparent), url($imageUrl);
+}
+
+@mixin creation-background-desktop($imageUrl){
+    background-image: linear-gradient( to top, rgba(0, 0, 0, 0.6), transparent), url($imageUrl);
+   // transition: background-image 300ms ease-in-out;
+
+   
+
+    &:hover{
+       // background-image: linear-gradient( to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url($imageUrl);
+        
+        h3{
+
+            color: black;
+        }
+        
+    }
+}
+
+
+
+@mixin creation-background-hover($imageUrl){
+    background-image: url($imageUrl);
+    background-color: white;
+    opacity: 0.4;
+    }
+    
