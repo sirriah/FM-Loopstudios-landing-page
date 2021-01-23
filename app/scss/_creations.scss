@@ -4,11 +4,12 @@
         @include breakpoint-up(large) {
             display: flex;
             justify-content: space-between;
-
+            align-items: center;
         }
 
         h2 {
             text-align: center;
+            margin-bottom: 0;
             @include breakpoint-up(large) {
                 text-align: left;
                 display: inline-block;
@@ -24,10 +25,12 @@
     
 
     .button {
-        margin: 1.875rem auto;
+       margin: 1.875rem auto;
+       
 
         @include breakpoint-up(large){
             margin: 0;
+
         }
     }
 
@@ -83,8 +86,7 @@
             }
 
             @include breakpoint-up(large) {
-                font-size: 2rem;
-                line-height: 2rem;
+                
                 padding-right: 1.5rem;
             }
         

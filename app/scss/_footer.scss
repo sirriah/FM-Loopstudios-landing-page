@@ -1,0 +1,46 @@
+.footer{
+    background: black;
+    color: $primary;
+
+    &__content{
+        text-align: center;
+        @include breakpoint-up(large){
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__first-col{
+        padding-bottom: 2.5rem;
+        a {
+            color: $primary;
+            display: block;
+            &:not(:last-child){
+                padding-bottom: 1rem;
+            }
+
+            @include breakpoint-up(large){
+                display: inline;
+            }
+        }
+    }
+
+
+    &__second-col{
+        img{
+            padding-bottom: 1rem;
+
+            &:not(:last-child){
+                margin-right: 1rem;
+            }
+        }
+       
+        @include breakpoint-up(large){
+            text-align: right;
+        }
+    }
+
+    
+
+    
+}

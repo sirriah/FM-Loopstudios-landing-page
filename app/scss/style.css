@@ -78,13 +78,34 @@ h1 {
   font-size: 2.5rem;
 }
 
+@media (min-width: 64em) {
+  h1 {
+    font-size: 4.5rem;
+    line-height: 4.375rem;
+  }
+}
+
 h2 {
   font-size: 2rem;
+}
+
+@media (min-width: 64em) {
+  h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
 }
 
 h3 {
   font-size: 1.5rem;
   line-height: 1.5rem;
+}
+
+@media (min-width: 64em) {
+  h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 }
 
 h1, h2, h3 {
@@ -176,10 +197,11 @@ button, .button {
   letter-spacing: 0.3125rem;
   color: black;
   border: 1px solid black;
-  padding: 0.5rem 2.2rem;
+  padding: 0.6rem 2.2rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: pointer;
+  display: inline-block;
 }
 
 button:hover, .button:hover {
@@ -357,15 +379,10 @@ button:hover, .button:hover {
   font-size: 2.5rem;
 }
 
-@media (min-width: 64em) {
-  .hero__text > h1 {
-    font-size: 4.5rem;
-    line-height: 4.375rem;
-  }
-}
-
 .introduction {
   text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (min-width: 64em) {
@@ -373,6 +390,7 @@ button:hover, .button:hover {
     text-align: left;
     position: relative;
     min-height: 31.25rem;
+    margin-bottom: 8.5rem;
   }
 }
 
@@ -408,11 +426,15 @@ button:hover, .button:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 .creations__header h2 {
   text-align: center;
+  margin-bottom: 0;
 }
 
 @media (min-width: 64em) {
@@ -497,8 +519,6 @@ button:hover, .button:hover {
 
 @media (min-width: 64em) {
   .creations__item h3 {
-    font-size: 2rem;
-    line-height: 2rem;
     padding-right: 1.5rem;
   }
 }
@@ -620,6 +640,59 @@ button:hover, .button:hover {
   }
   .creations .make-it-fisheye:hover h3 {
     color: black;
+  }
+}
+
+.footer {
+  background: black;
+  color: white;
+}
+
+.footer__content {
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.footer__first-col {
+  padding-bottom: 2.5rem;
+}
+
+.footer__first-col a {
+  color: white;
+  display: block;
+}
+
+.footer__first-col a:not(:last-child) {
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 64em) {
+  .footer__first-col a {
+    display: inline;
+  }
+}
+
+.footer__second-col img {
+  padding-bottom: 1rem;
+}
+
+.footer__second-col img:not(:last-child) {
+  margin-right: 1rem;
+}
+
+@media (min-width: 64em) {
+  .footer__second-col {
+    text-align: right;
   }
 }
 
