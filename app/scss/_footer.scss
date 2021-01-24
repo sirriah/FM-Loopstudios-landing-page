@@ -1,10 +1,16 @@
 .footer{
     background: black;
     color: $primary;
+    margin-top: 3rem;
+
+    @include breakpoint-up(large){
+        margin-top: 7rem;
+    }
 
     &__content{
         text-align: center;
         @include breakpoint-up(large){
+            text-align: left;
             display: flex;
             justify-content: space-between;
         }
@@ -12,35 +18,50 @@
 
     &__first-col{
         padding-bottom: 2.5rem;
-        a {
-            color: $primary;
-            display: block;
-            &:not(:last-child){
-                padding-bottom: 1rem;
-            }
-
-            @include breakpoint-up(large){
-                display: inline;
-            }
+        img{
+            padding-bottom: 2rem;
         }
     }
 
+    &__menu{
+
+        a {
+            color: $primary;
+            display: block;
+            padding-bottom: 1rem;
+            position: relative;
+            
+            @include breakpoint-up(large){
+                display: inline;
+                padding-bottom: 0;
+                @include menu-hover;
+
+                &:not(:last-child){
+                    margin-right: 2rem;
+                }
+           }            
+        }
+    }
 
     &__second-col{
-        img{
-            padding-bottom: 1rem;
-
-            &:not(:last-child){
-                margin-right: 1rem;
-            }
-        }
-       
         @include breakpoint-up(large){
             text-align: right;
         }
     }
 
-    
+    &__socials{
+        padding-bottom: 2rem;
+        a{
+            @include menu-hover; 
+            position: relative;               
+            &:not(:last-child){
+                margin-right: 1rem;
+            }
+        }
+    }
 
-    
+    &__copyright {
+        color: $additional1;
+    }
+   
 }

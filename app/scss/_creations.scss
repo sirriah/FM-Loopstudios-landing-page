@@ -17,33 +17,26 @@
                 margin-bottom: 0;
             }
         }
-
-               
-
     }
 
-    
-
     .button {
-       margin: 1.875rem auto;
-       
+       margin: 0 auto 0 auto;
+       position: relative;
 
         @include breakpoint-up(large){
             margin: 0;
-
         }
     }
 
-    
-
-
     &__grid{
         margin: 0 1.5rem 0 1.5rem;
+        flex-direction: column;
+        justify-content: center;
         @include breakpoint-up(large) {
-            display: flex;
-            flex-wrap: wrap;
+            flex-direction: row;
             justify-content: space-between;
-            margin: 0;
+            flex-wrap: wrap;
+            margin: 2rem 0 0 0;
         }
     }
 
@@ -54,6 +47,26 @@
         background-size: cover;
         display: inline-block;
         position: relative;
+        cursor: pointer;
+
+        &::after{
+            display: block;
+            position: absolute;
+            content: "";
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: $primary;
+            opacity: 0;
+            z-index: 5;
+            transition: opacity 300ms ease-in-out;
+        }
+        
+        &:hover::after{
+            opacity: 0.7;
+            
+        }
         
         &:not(:last-child){
             margin-bottom: 1.5rem;
@@ -75,15 +88,9 @@
             left: 1.5rem;
             margin: 0;
             max-height: 7.6875rem;
-
-            &::after{
-                display: block;
-                content: "";
-                width: 100%;
-                height: 100%;
-                background-color: pink;
-                opacity: 0.5;
-            }
+            z-index: 10;
+            transition: color 300ms ease-in-out;
+            
 
             @include breakpoint-up(large) {
                 
