@@ -258,6 +258,12 @@ button:hover, .button:hover {
   position: relative;
 }
 
+@media (min-width: 64em) {
+  .header nav {
+    padding-top: 4rem;
+  }
+}
+
 .header__menu {
   position: absolute;
   top: 50%;
@@ -310,27 +316,6 @@ button:hover, .button:hover {
   font-size: 0.9375rem;
   color: white;
   position: relative;
-  /*
-      &::before {
-        content: "";
-        position: absolute;
-        display: block;
-        height: 2px;
-        left: 0.5rem;
-        right: 0.5rem;
-        bottom: -0.5rem;
-        background-color: white;
-        opacity: 0;
-        transition: opacity 200ms ease-in-out;
-      }
-
-      &:hover {
-        &::before {
-          opacity: 1;
-        }
-
-      
-      }*/
 }
 
 .header__links a:not(:last-child) {
@@ -415,6 +400,7 @@ button:hover, .button:hover {
     position: relative;
     min-height: 31.25rem;
     margin-bottom: 8.5rem;
+    margin-top: 7rem;
   }
 }
 
