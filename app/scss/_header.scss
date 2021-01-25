@@ -1,11 +1,11 @@
 .header {
   &.open {
     .header__toggle {
-      > span:first-child {
+      > span:nth-child(2) {
         transform: rotate(45deg);
       }
 
-      > span:nth-child(2) {
+      > span:nth-child(3) {
         opacity: 0;
       }
 
@@ -65,7 +65,7 @@
   }
 
   &__toggle {
-    > span {
+     .menu-span {
       width: 26px;
       height: 2px;
       background-color: $primary;
