@@ -1,3 +1,7 @@
+/*
+Our Creations - 3rd section under nav menu 
+*/
+
 .creations{
 
     &__header{
@@ -28,6 +32,9 @@
         }
     }
 
+    /*
+    Picture menu in column for mobile, grid for desktop
+    */
     &__grid{
         margin: 0 1.5rem 0 1.5rem;
         flex-direction: column;
@@ -81,6 +88,7 @@
             height: 28.125rem;
 
         }
+        
 
          h3 {
             color: white;

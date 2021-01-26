@@ -1,39 +1,42 @@
-.introduction{
-    text-align: center;
-    box-sizing: border-box;
+/*
+Introduction section - 2nd section under the top navigation
+*/
 
+.introduction {
+  text-align: center;
+  box-sizing: border-box;
 
-    @include breakpoint-up(large){
-        text-align: left;
-        position: relative;
-        min-height: 31.25rem;
-        margin-bottom: 8.5rem;
-        margin-top: 7rem;
+  @include breakpoint-up(large) {
+    text-align: left;
+    position: relative;
+    min-height: 31.25rem;
+    margin-bottom: 8.5rem;
+    margin-top: 7rem;
+  }
+
+  &__image {
+    padding-bottom: 2.5rem;
+
+    @include breakpoint-up(large) {
+      position: absolute;
+      top: 0;
+      left: 0;
     }
+  }
 
-    &__image{
-        padding-bottom: 2.5rem;
-
-        @include breakpoint-up(large){
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
+  &__text {
+    @include breakpoint-up(large) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      max-width: 33.8125rem;
+      background-color: white;
+      padding-top: 6rem;
+      padding-left: 6rem;
     }
+  }
 
-    &__text {
-        @include breakpoint-up(large){
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            max-width: 33.8125rem;
-            background-color: white;
-            padding-top: 6rem;
-            padding-left: 6rem;
-        }
-    }
-
-    &__paragraph{
-        margin-bottom: 0;
-    }
+  &__paragraph {
+    margin-bottom: 0;
+  }
 }

@@ -7,6 +7,10 @@
         margin-top: 7rem;
     }
 
+    /*
+        Content of the footer is split into two columns   
+    */
+
     &__content{
         text-align: center;
         @include breakpoint-up(large){
@@ -49,6 +53,7 @@
         }
     }
 
+    /* social icons */
     &__socials{
         padding-bottom: 2rem;
         a{

@@ -15,6 +15,10 @@ body{
     line-height: 1.3;
     font-size: $font-med;
 
+    /* this helper class is used when toggle menu is visible. 
+    It disable scrolling on body element
+    */
+
     &.noscroll{
         overflow: hidden;
     }
@@ -67,6 +71,7 @@ img{
     max-width: 100%;
 }
 
+/*flex helper class*/
 .flex{
     display: flex;
 
@@ -83,6 +88,8 @@ img{
     }
 }
 
+
+/* Container helper class, used for set the padding of content */
 .container {
     margin: 0 auto;
     max-width: 69.625rem;
@@ -112,6 +119,8 @@ img{
     }
 }
 
+/* This helper class makes content invisible for humans, 
+but it keeps content on the page for screen readers and bots*/
 
 .sr-text{
   position: absolute;
@@ -138,6 +147,8 @@ button, .button{
         color: $primary;
     }
 }
+
+/*helper classes for mobile view and desktop view */
 
 .hide-for-mobile {
     @include breakpoint-down(medium) {

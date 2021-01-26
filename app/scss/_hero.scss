@@ -1,22 +1,30 @@
+/*
+Hero image - 1st section under the header menu
+*/
+
 .hero {
   min-height: 33.9375rem;
   margin-bottom: 3rem;
 
-  &__wrapper{
+  &__wrapper {
     position: relative;
     min-height: 40.625rem;
   }
 
-
-  &__content{
-    background-image:  url("./../../images/mobile/image-hero.jpg");
+  &__content {
+    background-image: url("./../../images/mobile/image-hero.jpg");
     background-size: cover;
     width: 100%;
     position: absolute;
     top: 0;
-    
+
     @include breakpoint-up(large) {
-      background-image: linear-gradient(to top,rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url("./../../images/desktop/image-hero.jpg");
+      background-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url("./../../images/desktop/image-hero.jpg");
     }
   }
 
@@ -27,19 +35,19 @@
     padding: 26px 24px 24px 24px;
     position: absolute;
     top: 50%;
-    left: 25px;
-    right: 25px;
+    left: 1.5rem;
+    right: 1.5rem;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    
+
     @include breakpoint-up(large) {
-      max-width: 40.625rem;;
+      max-width: 40.625rem;
+      left: 0rem;
+      right: 0rem;
     }
 
-
-    > h1{
-        margin: 0;
-        
+    > h1 {
+      margin: 0;
     }
   }
 }

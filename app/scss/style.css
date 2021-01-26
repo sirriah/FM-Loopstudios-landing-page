@@ -260,7 +260,7 @@ button:hover, .button:hover {
 
 @media (min-width: 64em) {
   .header nav {
-    padding-top: 4rem;
+    padding: 4rem 0rem 2.5rem 0rem;
   }
 }
 
@@ -372,8 +372,8 @@ button:hover, .button:hover {
   padding: 26px 24px 24px 24px;
   position: absolute;
   top: 50%;
-  left: 25px;
-  right: 25px;
+  left: 1.5rem;
+  right: 1.5rem;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -381,6 +381,8 @@ button:hover, .button:hover {
 @media (min-width: 64em) {
   .hero__text {
     max-width: 40.625rem;
+    left: 0rem;
+    right: 0rem;
   }
 }
 

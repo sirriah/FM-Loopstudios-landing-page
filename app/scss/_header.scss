@@ -1,4 +1,5 @@
 .header {
+  /* Final state of the animation of hamburger menu */
   &.open {
     .header__toggle {
       > span:nth-child(2) {
@@ -15,6 +16,7 @@
     }
   }
 
+  /* Overlay effect for the rest of the page when the mobile menu is opened */
   .overlay {
     visibility: hidden;
     opacity: 0;
@@ -27,16 +29,15 @@
     z-index: 1;
   }
 
+  /* main navigation on the top of the page */
   nav {
     padding: 2.5rem 1.5rem 2.5rem 1.5rem;
     z-index: 3;
     position: relative;
-    @include breakpoint-up(large){
-    padding-top: 4rem;
+    @include breakpoint-up(large) {
+      padding: 4rem 0rem 2.5rem 0rem;
     }
   }
-
-  
 
   &__menu {
     position: absolute;
@@ -69,8 +70,9 @@
     }
   }
 
+  /* mobile menu */
   &__toggle {
-     .menu-span {
+    .menu-span {
       width: 26px;
       height: 2px;
       background-color: $primary;
@@ -86,7 +88,6 @@
   }
 
   &__links {
-    
     a {
       font-size: $font-med;
       color: white;
@@ -97,7 +98,6 @@
       }
 
       @include menu-hover;
-
     }
   }
 }
